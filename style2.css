@@ -1,0 +1,430 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+
+/* reset */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: PingFangTC-Semibold;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+/* header */
+
+.header {
+    position: fixed;
+    background: #fff;
+    width: 100%;
+}
+
+.nav {
+    /* width: 1152px; */
+    margin: 0 5%;
+    height: 60px;
+    color: #C672A6;
+}
+
+.logo-icon {
+    float: left;
+    margin: 10px;
+}
+
+.tit {
+    float: left;
+    font-size: 24px;
+    color: #4B381D;
+    margin: 18px 10px;
+    line-height: 36px;
+}
+
+.select {
+    float: left;
+    border: 1px solid #C672A6;
+    border-radius: 8px;
+    height: 36px;
+    width: 10%;
+    margin: 15px 10px;
+    font-family: PingFangTC-Medium;
+    font-size: 18px;
+    color: #000000;
+}
+
+.color {
+    float: left;
+    width: 16%;
+    font-size: 33px;
+    padding-top: 5px;
+    margin: 0 2%;
+}
+
+.fa-moon,
+.fa-sun {
+    float: left;
+    margin: 10px 1%;
+}
+
+.frame {
+    float: left;
+    background: rgba(255, 255, 255, 0.50);
+    border: 1px solid #C672A6;
+    width: 50px;
+    height: 33px;
+    border-radius: 100px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.round {
+    background: #C672A6;
+    width: 33px;
+    height: 33px;
+    border-radius: 100%;
+}
+
+.round:active {
+    float: right;
+}
+
+.collection {
+    float: left;
+    border: 2px solid #C672A6;
+    border-radius: 100px;
+    height: 46px;
+    width: 150px;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 20px;
+    color: #C672A6;
+    cursor: pointer;
+}
+
+.collection:hover {
+    background: #C672A6;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.fa-plus {
+    font-size: 22px;
+    padding-right: 10px;
+}
+
+.signin {
+    font-size: 18px;
+    margin: 23px;
+    float: right;
+}
+
+
+/* content */
+
+.content {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.left {
+    grid-row: 1/7;
+    grid-column: 2/3;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.fa-chevron-left,
+.fa-chevron-right {
+    margin-top: 150px;
+    grid-row: 3/4;
+    grid-column: 5/6;
+    font-size: 36px;
+    color: #000000;
+    cursor: pointer;
+}
+
+.comic-img {
+    margin-top: 60px;
+    grid-row: 1/7;
+    grid-column: 3/7;
+    width: 100%;
+}
+
+.right {
+    grid-row: 1/7;
+    grid-column: 7/8;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.left:hover,
+.right:hover {
+    background: rgba(219, 158, 214, 0.3);
+    cursor: pointer;
+}
+
+.ad {
+    grid-row: 7/8;
+    grid-column: 3/7;
+    margin-top: 20px;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 70px;
+}
+
+
+/* footer  */
+
+footer {
+    position: fixed;
+    background: #C672A6;
+    width: 100%;
+    bottom: 0;
+    padding: 0 5%;
+}
+
+.like {
+    float: left;
+    font-family: PingFangTC-Medium;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin: 18px;
+    cursor: pointer;
+}
+
+.community {
+    float: right;
+    margin: 0 18px;
+    margin-right: 10%;
+    padding: 10px 0;
+}
+
+.icon-btn {
+    float: left;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    margin-left: 16px;
+    cursor: pointer;
+}
+
+.fb {
+    background: #025FD4;
+    text-align: center;
+    line-height: 40px;
+}
+
+.twitter {
+    background: #76CDFF;
+    text-align: center;
+    line-height: 40px;
+}
+
+.link {
+    background: #7ED321;
+    text-align: center;
+    line-height: 40px;
+}
+
+
+/* page-g */
+
+.page-g {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.59);
+    width: 100%;
+    height: 300px;
+    bottom: 60px;
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(7, 1fr);
+    opacity: 0;
+    cursor: pointer;
+}
+
+.page-g .left {
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+.page-g .right {
+    grid-row: 1/2;
+    grid-column: 7/8;
+}
+
+.page-g .left .fa-chevron-left {
+    margin: 0 auto;
+    color: #fff;
+    cursor: pointer;
+}
+
+.page-g .right .fa-chevron-right {
+    margin: 0 auto;
+    color: #fff;
+    cursor: pointer;
+}
+
+.page {
+    margin: 0 auto;
+    color: #fff;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.num-page {
+    margin: 5px 0;
+}
+
+.comic-page {
+    width: 70%;
+}
+
+.active {
+    border: 8px solid #D8B7CC;
+}
+
+.page-g:hover,
+.page-g:focus,
+.page-g:active {
+    opacity: 1;
+}
